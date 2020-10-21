@@ -1,4 +1,4 @@
-package com.example.webservice;
+package com.example.reproductor;
 
 import org.junit.Test;
 
