@@ -1,4 +1,4 @@
-package com.example.webservice;
+package com.example.aproximidad;
 
 import org.junit.Test;
 
