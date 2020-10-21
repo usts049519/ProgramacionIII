@@ -1,4 +1,4 @@
-package com.example.webservice;
+package com.example.video;
 
 import org.junit.Test;
 
