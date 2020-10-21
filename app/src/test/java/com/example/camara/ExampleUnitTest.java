@@ -1,4 +1,4 @@
-package com.example.webservice;
+package com.example.camara;
 
 import org.junit.Test;
 
