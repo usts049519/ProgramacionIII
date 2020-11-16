@@ -10,6 +10,7 @@
         android:id="@+id/imgPhotoProfile"
         android:layout_width="@dimen/main.img.size"
         android:layout_height="@dimen/main.img.size"
+        android:layout_marginTop="40dp"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

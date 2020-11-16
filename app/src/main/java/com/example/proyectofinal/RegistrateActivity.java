@@ -97,12 +97,12 @@ public class RegistrateActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
                                 Toast.makeText(RegistrateActivity.this,"Tus datos se guardaron exitosamente", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(RegistrateActivity.this, MainActivity.class));
+                                startActivity(new Intent(RegistrateActivity.this, InicioActivity.class));
                                 finish();
                             }else {
                                 //Toast.makeText(RegistrateActivity.this,"Tus datos no se enviaron correctamente", Toast.LENGTH_SHORT).show();
                                 Toast.makeText(RegistrateActivity.this,"Tus datos se guardaron exitosamente", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(RegistrateActivity.this, MainActivity.class));
+                                startActivity(new Intent(RegistrateActivity.this, InicioActivity.class));
                                 finish();
                             }
                         }
