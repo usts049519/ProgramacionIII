@@ -5,41 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondologin"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/loginActivityImage"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
-        android:src="@drawable/imglogin"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        app:tint="@color/colorWhite" />
-
-    <TextView
-        android:id="@+id/Empresa"
-        android:layout_below="@+id/loginActivityImage"
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MayosCris"
-        android:textColor="@color/textColorLight"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true" />
+    tools:context=".RegistrateActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/Empresa"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp"
         android:layout_marginRight="30dp"
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/txtUser"
+            android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/ic_login"
@@ -47,7 +25,24 @@
             android:backgroundTint="@color/colorWhite"
             android:textColor="@color/colorWhite"
             android:textColorHint="@color/colorWhite"
+            android:inputType="textPersonName"
+            android:hint="  Nombre" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/ic_login"
+            android:drawableTint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="15dp"
             android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorWhite"
             android:hint="  Email" />
         <View
             android:layout_width="match_parent"
@@ -55,7 +50,7 @@
             android:background="@color/colorWhite"/>
 
         <EditText
-            android:id="@+id/txtPassword"
+            android:id="@+id/txtPass"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/ic_mbrilock_99595"
@@ -72,36 +67,24 @@
             android:background="@color/colorWhite"/>
 
         <Button
-            android:id="@+id/btnRegistrarse"
-            android:text="Registrate"
+            android:id="@+id/btnRegistrar"
+            android:text="Registrar"
             android:textAllCaps="false"
-            android:textColor="@color/colorPrimary"
-            android:background="@color/colorWhite"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btnIniciar"
-            android:text="Iniciar"
-            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
             android:textColor="@color/textColorLight"
             android:background="@drawable/buttomfondo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <Button
-            android:id="@+id/btnIniciarGoogle"
-            android:text="Inicia con Google"
+            android:id="@+id/btnVolver"
+            android:text="Volver"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
             android:background="@color/colorWhite"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
-
-
-
 </RelativeLayout>

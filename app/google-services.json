@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "733407858386",
+    "firebase_url": "https://proyectofinal-progra.firebaseio.com",
+    "project_id": "proyectofinal-progra",
+    "storage_bucket": "proyectofinal-progra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733407858386:android:db02aca2e1c6e5716d270b",
+        "android_client_info": {
+          "package_name": "com.example.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733407858386-3m7u1f9d2nej2u3pq4st775u5sj9um3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectofinal",
+            "certificate_hash": "41723fba18417cdbe8847f0b6e9d2edc65bbec85"
+          }
+        },
+        {
+          "client_id": "733407858386-04vo65dha57t4hdqeql99smncienbkqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg9kAqc5GRCB0m2iecqOrbtONeEfywXo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733407858386-04vo65dha57t4hdqeql99smncienbkqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
