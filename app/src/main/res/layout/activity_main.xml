@@ -1,29 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
-    <EditText
-        android:id="@+id/txtBuscarComputadora"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"/>
-    <ListView
-        android:id="@+id/ltsListaComputadoraCouchDB"
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAgregarComputadora"
+    <ImageView
+        android:id="@+id/loginActivityImage"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_login"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        app:tint="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/Empresa"
+        android:layout_below="@+id/loginActivityImage"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/design_default_color_on_secondary" />
+        android:text="MayosCris"
+        android:textColor="@color/textColorLight"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Empresa"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/ic_usuario"
+            android:drawableTint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="textEmailAddress"
+            android:hint="  Usuario" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawableTint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:hint="  Password" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:text="Registrate"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:text="Iniciar"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorLight"
+            android:background="@drawable/buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnIniciarGoogle"
+            android:text="Inicia con Google"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
 </RelativeLayout>
